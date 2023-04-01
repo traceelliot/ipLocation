@@ -20,7 +20,7 @@ private val retrofit = Retrofit.Builder()
 
 //Interface which inform how use API
 interface RestApiService{
-    @GET("ipgeo?apiKey=391354b1f23b449e901af9f882a5ac89&fields=continent_name,country_name,city,zipcode,isp")
+    @GET("ipgeo?apiKey=PUTYOURIPKEY&fields=continent_name,country_name,city,zipcode,isp")
     suspend fun getIpInfo(
         @Query("ip")ip: String
     ): IpInfo
